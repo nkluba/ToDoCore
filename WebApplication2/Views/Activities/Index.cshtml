@@ -16,7 +16,7 @@
 
 <!-- Form to Add a New Activity -->
 <form asp-action="Create" method="post">
-    <div class="form-group">
+    <div class="form-group mb-3"> <!-- Added margin-bottom for spacing -->
         <input type="text" name="Description" placeholder="New activity" class="form-control" required />
     </div>
     <button type="submit" class="btn btn-primary">Add</button>
@@ -27,7 +27,7 @@
 
 <!-- Search and Filter Options -->
 <form method="get" asp-action="Index">
-    <div class="form-group">
+    <div class="form-group mb-3"> <!-- Added margin-bottom for spacing -->
         <input type="text" name="searchString" value="@ViewBag.SearchString" placeholder="Search activities..." class="form-control" />
     </div>
     <button type="submit" class="btn btn-secondary">Search</button>
